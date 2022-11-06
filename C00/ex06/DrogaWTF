@@ -1,0 +1,41 @@
+#include <unistd.h>
+
+void	ft_putchar(char c){
+	write(1, &c, 1);
+}
+
+void	ft_print_comb2(){
+	char first;
+	char second= '0';
+
+	char firstOne;
+	char secondOne;
+	while(firstOne <= '9'){
+		while(secondOne <= '9'){
+			while(first <= '9'){
+				while(second <= '9'){
+					ft_putchar(firstOne);
+					ft_putchar(secondOne);
+					ft_putchar(' ');
+					ft_putchar(first);
+					ft_putchar(second);
+					ft_putchar(' ');
+					second++;
+				}
+				second = '0';
+				first++;
+			}
+			first = '0';
+			second= secondOne + 1;
+			secondOne++;
+		}
+		secondOne= firstOne + 1;
+		first = '0';
+		second =secondOne + 1;
+		firstOne++;
+	}
+}
+int main(){
+	ft_print_comb2();
+	return 0;
+}
