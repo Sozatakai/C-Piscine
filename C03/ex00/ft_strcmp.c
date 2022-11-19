@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <unistd.h>
+//#include <stdio.h>
+//#include <unistd.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -13,10 +13,10 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
+/*
 int	main(void)
 {
-	char txt1[] = "zolaaaa";
+	char txt1[] = "holaaaz";
 	char txt2[] = "holaaaaaaaz";
 	char *s1 = txt1;
 	char *s2 = txt2;
@@ -25,4 +25,4 @@ int	main(void)
 	alpha = ft_strcmp(s1, s2);
 	printf("Alpha es: %i\n", alpha);
 	return (0);
-}
+}*/
