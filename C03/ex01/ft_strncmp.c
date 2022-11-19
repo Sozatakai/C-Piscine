@@ -19,13 +19,13 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 int	main(void)
 {
 	char txt1[] = "holaa";
-	char txt2[] = "hoaZº";
+	char txt2[] = "holZº";
 	char *s1 = txt1;
 	char *s2 = txt2;
-	unsigned int size = 3;
+	unsigned int size = 4;
 	int alpha;
 
-	alpha = ft_strncmp(s1, s2, limit);
+	alpha = ft_strncmp(s1, s2, size);
 
 	printf("Alpha es: %i\n", alpha);
 	return (0);

@@ -20,5 +20,7 @@ int	main()
 {
 	char src[] = "que tal";			
 	char dest[] = "Hola ";
-	printf("%s", ft_strncat(dest, src, 7));
+	int size = 3;
+
+	printf("%s", ft_strncat(dest, src, size));
 }
